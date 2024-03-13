@@ -5,12 +5,12 @@ for (char in txt) {
     // console.log(txt[char])
     let character = txt[char]
     list_vowels = ["a", "e", "i", "o", "u"]
-    // if (character == "a" ||
-    //     character == "e" ||
-    //     character == "i")
-    if (character in list_vowels) {
-        console.log("yes")
-    } else {
-        console.log(`${character} is not vowel`)
+    for (vowel in list_vowels) {
+        if (vowel == char) {
+            console.log(`${character} is A vowel ${char}`)
+        }
+        else {
+            console.log(`${character} is not vowel`)  
+        }
     }
 }
